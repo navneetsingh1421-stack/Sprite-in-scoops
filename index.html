@@ -3,43 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <title>Sprite in Scoops</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(to right, #ffafbd, #ffc3a0);
-            color: #333;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>Sprite in Scoops - Premium Ice Cream Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- ========== NAVIGATION ========== -->
     <header>
-        <h1>Welcome to Sprite in Scoops</h1>
+        <nav class="container">
+            <a href="#" class="logo">🍦 Sprite in Scoops</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>Your content goes here.</p>
-    </main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <h1>Sprite in Scoops</h1>
+            <p>Experience the Ultimate Fusion<br>Where Sprite Fizz Meets Creamy Perfection</p>
+            <div class="hero-buttons">
+                <a href="#flavors" class="btn btn-primary">Explore Flavors</a>
+                <a href="#contact" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-ice-cream">🍦🍦🍦</div>
+    </section>
+
+    <!-- ========== FEATURED FLAVORS ========== -->
+    <section class="section" id="flavors">
+        <div class="container">
+            <h2 class="section-title">Our Premium Flavors</h2>
+            <p class="section-subtitle">Handcrafted with the finest ingredients for an unforgettable taste</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image vanilla">🥛</div>
+                    <h3>Classic Vanilla</h3>
+                    <p>Smooth and creamy pure vanilla with a spritz of Sprite</p>
+                    <div class="product-price">$4.99</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image strawberry">🍓</div>
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh strawberry essence with refreshing Sprite bubbles</p>
+                    <div class="product-price">$5.49</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image chocolate">🍫</div>
+                    <h3>Dark Chocolate</h3>
+                    <p>Rich dark chocolate delight with a zesty Sprite twist</p>
+                    <div class="product-price">$5.99</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image mango">🥭</div>
+                    <h3>Tropical Mango</h3>
+                    <p>Exotic mango flavors dancing with Sprite's citrus notes</p>
+                    <div class="product-price">$5.49</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image mint">🌿</div>
+                    <h3>Mint Mojito</h3>
+                    <p>Cool minty refresh paired perfectly with Sprite fizz</p>
+                    <div class="product-price">$5.49</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image pistachio">🌾</div>
+                    <h3>Pistachio Dream</h3>
+                    <p>Nutty pistachio creaminess with a Sprite sparkle</p>
+                    <div class="product-price">$5.99</div>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple steps to your perfect scoop</p>
+            
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Flavor</h3>
+                    <p>Select from our delicious range of premium ice cream flavors</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Pick Your Size</h3>
+                    <p>Choose between small, medium, or large scoops</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Add Sprite Fizz</h3>
+                    <p>Get that signature Sprite fizz for the perfect experience</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Enjoy & Repeat</h3>
+                    <p>Savor the moment and come back for more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real reviews from real ice cream lovers</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"This is pure magic! The combination of ice cream and Sprite is simply divine. I'm obsessed!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best dessert experience ever. The flavors are incredibly creative and refreshing. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I brought my family here and everyone loved it. The Sprite fizz with ice cream is genius!"</p>
+                    <div class="testimonial-author">
+                        <strong>Emily Rodriguez</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Premium quality, amazing taste, perfect service. This is my new favorite place!"</p>
+                    <div class="testimonial-author">
+                        <strong>David Kim</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SPECIAL OFFERS ========== -->
+    <section class="section offers-section" id="offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <p class="section-subtitle">Limited time deals you can't miss</p>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">20% OFF</div>
+                    <h3>First Time Offer</h3>
+                    <p>Get 20% off on your first purchase. Use code: WELCOME20</p>
+                    <a href="#" class="btn btn-outline">Claim Offer</a>
+                </div>
+
+                <div class="offer-card featured">
+                    <div class="offer-badge special">COMBO DEAL</div>
+                    <h3>Buy 2 Get 1 Free</h3>
+                    <p>Buy any 2 scoops and get your third flavor absolutely free!</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">LOYALTY</div>
+                    <h3>Loyalty Rewards</h3>
+                    <p>Join our rewards program and earn points on every purchase</p>
+                    <a href="#" class="btn btn-outline">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with New Flavors!</h2>
+                <p>Subscribe to our newsletter and get exclusive offers delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p class="newsletter-info">✓ No spam • ✓ Exclusive offers • ✓ New flavor alerts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sprite in Scoops</h3>
+                    <p>Bringing you the finest ice cream experience since 2024. Premium flavors, perfect taste, every time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#flavors">Our Flavors</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#offers">Special Offers</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Order Tracking</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Returns</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@spritescoops.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Ice Cream Avenue, Flavor City</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 10am - 10pm</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sprite in Scoops. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.btn-add').forEach(button => {
+            button.addEventListener('click', function() {
+                this.textContent = 'Added! ✓';
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                }, 1500);
+            });
+        });
+    </script>
 </body>
 </html>
